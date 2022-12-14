@@ -2,7 +2,7 @@ import React from "react"
 import * as PropTypes from "prop-types"
 import {IconFaceBook, IconInstagram} from "../Components/icons"
 import {PhoneNumber} from "../Utils/informations"
-// import "../../node_modules/animate.css/animate.css"
+import "../../../node_modules/animate.css/animate.css"
 import info from "../Data/informations.json"
 
 function NeoMorphismBTN({children, link}: {children: React.ReactNode; link: string}) {

@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../../node_modules/animate.css/animate.css'
+import '../../../node_modules/animate.css/animate.css'
 
 export const PagesLayout = ({ title, children }: { title: string, children:React.ReactNode }) => {
 	return (

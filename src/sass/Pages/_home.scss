@@ -1,0 +1,114 @@
+@use "../Utils" as var;
+
+.home {
+	position: relative;
+	display: grid;
+	overflow-x: hidden;
+	background: var.$color-dark-grey;
+	place-content: center;
+	gap: 24px;
+	@media screen and (min-width: var.$screen-md) {
+		gap: var.$tailwind-56;
+	}
+	@media screen and (min-width: var.$screen-lg) {
+		gap: var.$tailwind-64;
+	}
+	@media screen and (min-width: var.$screen-xl) {
+		gap: var.$tailwind-48;
+	}
+
+	&__hero {
+		&__header {
+			display: none;
+			visibility: hidden;
+
+			video {
+				visibility: hidden;
+
+				&:hover {
+					cursor: pointer;
+				}
+
+				&:active {
+					cursor: grabbing;
+				}
+			}
+
+			@media screen and (orientation: portrait) and (max-width: 819px) and (min-aspect-ratio: 15/7) {
+				visibility: hidden;
+			}
+			@media screen and (min-width: var.$screen-md) {
+				display: grid;
+				width: 100vw;
+				max-height: 5vh;
+				background: var.$color-dark-grey;
+				place-content: center;
+				video {
+					display: block;
+				}
+
+				@media screen and (min-width: var.$screen-xl) {
+					border-radius: var.$radius-3xl;
+				}
+			}
+		}
+
+		&__hero__main {
+			@apply z-10 h-full w-screen text-beige md:mx-auto md:h-full md:max-w-7xl mobile:translate-y-24;
+			.logo-wrapper {
+				@apply col-span-full grid h-96 place-content-center xl:mt-48;
+			}
+
+			.content {
+				@apply grid grid-cols-5 grid-rows-6 justify-between gap-y-2 px-3 md:mx-auto md:flex  md:justify-around;
+				&__nousTrouver {
+					@apply col-start-1 col-end-3 row-start-1 self-center justify-self-center;
+					.text {
+						}
+				}
+
+				&__laCarte {
+					@apply col-start-2 col-end-5 row-start-2 self-center justify-self-center md:gap-4;
+				}
+
+				&__contacts {
+					@apply col-start-4 col-end-6 row-start-3 self-center justify-self-center md:row-start-1;
+				}
+			}
+		}
+	}
+
+	.basilic {
+		visibility: hidden;
+		@media screen and (min-width: var.$screen-md) {
+			position: absolute;
+			top: 30%;
+			right: 25%;
+			display: block;
+		}
+	}
+
+	.scroll-icon {
+		&__wrapper {
+			@apply fixed bottom-44 right-[10vw] z-20 mt-24 hidden mix-blend-difference lg:block;
+		}
+
+		&__icon {
+			@apply text-beige drop-shadow-md;
+			animation-name: scrollY;
+			animation-duration: 750ms;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+	}
+
+	@keyframes scrollY {
+		0% {
+			transform: translateY(-1rem);
+		}
+		100% {
+			transform: translateY(1rem);
+		}
+	}
+}

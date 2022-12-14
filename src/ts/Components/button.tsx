@@ -1,6 +1,6 @@
 import React, {MouseEventHandler} from "react"
 import PropTypes from "prop-types"
-// import "../../node_modules/animate.css/animate.css"
+import "../../../node_modules/animate.css/animate.css"
 
 /**
  * #Button Wrapper
@@ -13,7 +13,14 @@ import PropTypes from "prop-types"
  * @return {JSX.Element}
  * @constructor
  */
-export const Button = ({children, activeClass, onSetActiveDay, key, nav = false, height = 28}: ButtonTypeProps) => {
+export const Button = ({
+	children,
+	activeClass,
+	onClick,
+	key,
+	nav = false,
+	height = 28,
+}: ButtonTypeProps) => {
 	const colors = {
 		isActive: "bg-beige text-dark-grey",
 		isNotActive: "border-beige text-beige bg-transparent border-solid border-2",
@@ -41,7 +48,7 @@ export const Button = ({children, activeClass, onSetActiveDay, key, nav = false,
 			className={`cursor-pointer ${getClasses().layoutProps} ${getClasses().boxProps} ${
 				getClasses().borderProps
 			} ${getClasses().textProps} ${activeClass ? colors.isActive : colors.isNotActive}`}
-			onClick={onSetActiveDay}>
+			onClick={onClick}>
 			{children}
 		</button>
 	)
@@ -57,11 +64,12 @@ Button.propTypes = {
 	key: PropTypes.string || PropTypes.number,
 	nav: PropTypes.bool,
 	height: PropTypes.number,
+	onMouseEvent: PropTypes.func,
 }
 type ButtonTypeProps = {
 	children?: React.ReactNode
 	activeClass?: boolean
-	onSetActiveDay?: MouseEventHandler<HTMLButtonElement>
+	onClick?:MouseEventHandler<Element>
 	key?: string | number
 	nav?: boolean
 	height?: number

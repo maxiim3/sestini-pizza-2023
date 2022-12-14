@@ -1,0 +1,12 @@
+@use "normalize.css";
+
+:root {
+	font-size: 62.5%;
+	overflow-x: hidden;
+
+	li {
+		list-style: none;
+		}
+
+	scroll-behavior: smooth;
+	}

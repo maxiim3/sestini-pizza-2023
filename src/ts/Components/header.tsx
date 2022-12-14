@@ -1,5 +1,6 @@
 import React from 'react'
-// import '../../node_modules/animate.css/animate.css'
+import "../../../node_modules/animate.css/animate.css";
+
 import { LineTitleWrapper } from '../Utils/lineTitleWrapper'
 
 export const Header = ({ title, children } : {title: string, children?: React.ReactNode}) => {

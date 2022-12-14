@@ -1,10 +1,10 @@
 import React, {MutableRefObject, useEffect, useState} from "react"
 import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom"
-import Home from "../Pages/accueil/home"
+import Home from "../Pages/Home/home"
 import {NousTrouver} from "../Pages/nous-trouver/nousTrouver"
 import Page404 from "../Pages/page404"
 import {Products} from "../Pages/la-carte/products"
-// import "node_modules/animate.css/animate.css"
+import "../../../node_modules/animate.css/animate.css"
 import MainUI from "../Layout/MainUI"
 
 export const Router = () => {

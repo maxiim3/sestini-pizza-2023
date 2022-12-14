@@ -1,8 +1,8 @@
-@use '../settings';
+@use '../Utils' as var;
 
 .itemsCard{
-	@include settings.text-style-menu-pizza-ingredients;
-	box-shadow: settings.$fx-box-shadow-top;
+	@include var.text-style-menu-pizza-ingredients;
+	box-shadow: var.$fx-box-shadow-top;
 	img{
 		width: 20%;
 		}

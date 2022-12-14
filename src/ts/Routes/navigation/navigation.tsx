@@ -12,7 +12,13 @@ import {PhoneNumber} from "../../Utils/informations"
 import {Button} from "../../Components/button"
 import info from "../../Data/informations.json"
 
-const Navigation = ({navRef, onClose}: {navRef: React.RefObject<any>; onClose: MouseEventHandler}) => {
+const Navigation = ({
+	navRef,
+	onClose,
+}: {
+	navRef: React.RefObject<any>
+	onClose: MouseEventHandler
+}) => {
 	return (
 		<nav
 			className="navigation z-20"
@@ -21,7 +27,7 @@ const Navigation = ({navRef, onClose}: {navRef: React.RefObject<any>; onClose: M
 				<NavLink
 					onClick={onClose}
 					className="navbar-brand"
-					to={"/accueil"}>
+					to={"/Home"}>
 					<MainLogo />
 				</NavLink>
 				<Button

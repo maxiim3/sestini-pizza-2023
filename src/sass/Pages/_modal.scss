@@ -1,0 +1,42 @@
+@use "../Utils" as var;
+#modal {
+	overflow: hidden;
+	width: min(100%, 850px);
+	height: min(100%, 1050px);
+	border-radius: 20px;
+	background: rgba(32, 43, 49, 0.9);
+
+	&::backdrop {
+		background: rgba(0, 0, 0, 0.75);
+		}
+
+	.modalLink,
+	button {
+		outline-color: var.$color-gold;
+		outline-offset: 5px;
+		}
+
+	&::before {
+		font-size: 10px;
+		font-weight: normal;
+		position: absolute;
+		top: 30px;
+		right: 17px;
+		display: block;
+		width: 100px;
+		content: attr(data-timing);
+		color: var.$color-beige-light;
+		@media screen and (min-width: 768px) {
+			top: 60px;
+			}
+		}
+	}
+
+.modal__img {
+	width: min(100%, 850px);
+	max-height: 600px;
+	border-radius: 15px;
+	margin-inline: auto;
+	object-fit: contain;
+	object-position: center;
+	}

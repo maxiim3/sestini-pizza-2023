@@ -1,6 +1,5 @@
 import React from "react"
-
-// import "../../../node_modules/animate.css/animate.css"
+import "../../../../node_modules/animate.css/animate.css"
 import {RenderButtons} from "./renderButtons"
 import {IconHandClick} from "../../Components/icons.js"
 import {PagesLayout} from "../../Layout/pagesLayout"

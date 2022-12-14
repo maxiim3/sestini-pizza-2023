@@ -82,7 +82,7 @@ export const NousTrouver = () => {
 									key={j._id}
 									activeClass={j.jour === getActiveDay("jour")}
 									height={20}
-									onSetActiveDay={() => setActiveDay(j)}>
+									onClick={() => setActiveDay(j)}>
 									{j.jour}
 								</Button>
 							</li>

@@ -1,6 +1,6 @@
-@use './fonts' as font ;
-@use './colors' as col ;
-@use './layout'as layout;
+@use 'fonts' as font ;
+@use 'colors' as col ;
+@use 'layout'as layout;
 
 //region APP-HOME
 @mixin dark-home-page {

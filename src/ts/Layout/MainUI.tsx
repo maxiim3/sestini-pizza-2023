@@ -1,6 +1,7 @@
 import React, {MutableRefObject, useCallback, useEffect, useState} from "react"
 import {Navbar} from "../Routes/navigation/navbar"
 import Navigation from "../Routes/navigation/navigation"
+import {MainLogoMinify} from "../Components/icons"
 
 const MainUI = ({children}: {children: React.ReactNode | React.ReactNode[]}) => {
 	const iconNav = React.createRef() as MutableRefObject<any>
@@ -27,15 +28,16 @@ const MainUI = ({children}: {children: React.ReactNode | React.ReactNode[]}) => 
 
 	return (
 		<>
-			<Navigation
-				navRef={navMobile}
-				onClose={handleShowNav}
-			/>
-			{/*			<MainLogoMinify
-			 refLogo={iconNav}
-			 onClick={handleShowNav}
-			 beige={true}
-			 />*/}
+			<nav
+				ref={iconNav}
+				onClick={handleShowNav}
+				className="fixed right-6 top-6 z-20 cursor-pointer md:hidden">
+				<MainLogoMinify beige={true} />
+				<Navigation
+					navRef={navMobile}
+					onClose={handleShowNav}
+				/>
+			</nav>
 			<Navbar />
 			{children}
 		</>

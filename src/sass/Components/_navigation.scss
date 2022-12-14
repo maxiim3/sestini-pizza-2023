@@ -1,5 +1,30 @@
-@use '../settings' as var;
+@use "../Utils" as var;
 
-.navbar .navbar-brand{
-	@include var.text-style-menu-pizza-title
+.navbar .navbar-brand {
+	@include var.text-style-menu-pizza-title;
+}
+
+.nav-btn-full {
+	@include var.btn-nav--full;
+}
+
+.nav-btn-empty {
+	@include var.btn-nav--empty;
+}
+
+.navigation {
+	position: fixed;
+	z-index: 50;
+	width: var.$fullWidth;
+	height: var.$fullHeight;
+	margin: 0;
+	padding: 0;
+
+	.navigationWrapper {
+		@include var.dark-home-page;
+
+		.social-grid {
+			@include var.social-grid-top(4.2rem);
+		}
 	}
+}
