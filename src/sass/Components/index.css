@@ -1,0 +1,29 @@
+/* Montserrat          */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800&display=swap");
+/* Cinzel & Czl. Deco. */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;800;900&display=swap");
+/* Roboto              */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.itemsCard {
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 141.4%;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  box-shadow: -4px -5px 10px rgba(48, 54, 54, 0.95);
+}
+.itemsCard img {
+  width: 20%;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.062rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */

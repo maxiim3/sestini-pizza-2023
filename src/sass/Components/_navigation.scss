@@ -1,0 +1,5 @@
+@use '../settings' as var;
+
+.navbar .navbar-brand{
+	@include var.text-style-menu-pizza-title
+	}

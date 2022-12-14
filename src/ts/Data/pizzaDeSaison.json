@@ -1,0 +1,25 @@
+{
+	"_id": 100,
+	"nom": "Pizza de Noël",
+	"pizzaDeSaison": true,
+	"ingredients": [
+		"Mozzarella Fior Di Latte",
+		"Pommes de Terre",
+		"Oignons Confits",
+		"Magret de Canard Frais",
+		"Olives Noires"
+	],
+	"base": {
+		"label": "Crème",
+		"describe": "Crème Fraîche",
+		"title": "Base Crème",
+		"key": "baseBlanche",
+		"state": "baseBlanche",
+		"setState": "setBaseBlanche"
+	},
+	"avecViande": true,
+	"avecPoisson": false,
+	"afterCook": null,
+	"url": "./img/PDN.png",
+	"prix": "14,50"
+}

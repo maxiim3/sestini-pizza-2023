@@ -1,10 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from "react"
+import ReactDOM from "react-dom"
+import "./sass/index.css"
+import {Router} from "./ts/Routes/Router"
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ReactDOM.render(
+	<React.StrictMode>
+		<Router />
+	</React.StrictMode>,
+	document.getElementById("root")
 )

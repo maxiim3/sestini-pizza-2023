@@ -1,0 +1,9 @@
+@use '../settings';
+
+.itemsCard{
+	@include settings.text-style-menu-pizza-ingredients;
+	box-shadow: settings.$fx-box-shadow-top;
+	img{
+		width: 20%;
+		}
+	}

@@ -1,0 +1,569 @@
+{
+  "pizzas": [
+    {
+      "_id": 1,
+      "nom": "La Margherita",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Basilic frais",
+        "Filet d'huile d'olive"
+      ],
+      "base": {
+        "label": "Tomate",
+        "describe": "Sauce Tomate",
+        "title": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
+      "avecViande": false,
+      "avecPoisson": false,
+      "afterCook": null,
+      "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https://static.onecms.io/wp-content/uploads/sites/19/2010/01/21/pizzetta-margherita-pizza-su-x.jpg",
+      "prix": "9,50"
+    },
+    {
+      "_id": 2,
+      "nom": "La Pizza de Bufflonne",
+      "ingredients": [
+        "Mozzarella di Bufala",
+        "Basilic frais",
+        "Filet d'huile d'olive"
+      ],
+      "base": {
+        "label": "Tomate",
+        "describe": "Sauce Tomate",
+        "title": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
+      "avecViande": false,
+      "avecPoisson": false,
+      "afterCook": null,
+      "url": "https://thumbs.dreamstime.com/b/delicious-italian-pizza-buffalo-mozzarella-tomato-sauce-basil-classic-napoli-food-italian-pizza-bufalina-103122067.jpg",
+      "prix": "12,00"
+    },
+    {
+      "_id": 3,
+      "nom": "La Prosciutto",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Chiffonnade de jambon cuit",
+        "Filet d'huile d'Olive"
+      ],
+      "base": {
+        "label": "Tomate",
+        "describe": "Sauce Tomate",
+        "title": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
+      "avecViande": true,
+      "avecPoisson": false,
+      "afterCook": null,
+      "url": "https://parmacrown.com/wp-content/uploads/2015/03/Pizza-4.jpg",
+      "prix": "10,00"
+    },
+    {
+      "_id": 4,
+      "nom": "La Regina",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Chiffonnade de jambon cuit",
+        "Emincés de Champignons",
+        "Origan",
+        "Olives Noires"
+      ],
+      "base": {
+        "label": "Tomate",
+        "describe": "Sauce Tomate",
+        "title": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
+      "avecViande": true,
+      "avecPoisson": false,
+      "afterCook": null,
+      "url": "https://i.pinimg.com/originals/c5/62/b3/c562b36428b8740aa0b4d6349b3c2200.jpg",
+      "prix": "11,00"
+    },
+    {
+      "_id": 5,
+      "nom": "Le Calzone de Sestini",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Chiffonnade de jambon cuit",
+        "Émincés de Champignons",
+        "Oeuf coulant"
+      ],
+      "base": {
+        "label": "Tomate",
+        "describe": "Sauce Tomate",
+        "title": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
+      "avecViande": true,
+      "avecPoisson": false,
+      "afterCook": null,
+      "url": "https://celentano.ro/wp-content/uploads/2020/01/calzone_2-1080x960-1.jpg",
+      "prix": "11,50"
+    },
+    {
+      "_id": 6,
+      "nom": "La Végétarienne",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Emincés de Champignons",
+        "Poivrons",
+        "Courgettes",
+        "Tomates cerises",
+        "Olives noires"
+      ],
+      "base": {
+        "label": "Tomate",
+        "describe": "Sauce Tomate",
+        "title": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
+      "avecViande": false,
+      "avecPoisson": false,
+      "afterCook": null,
+      "url": "https://img.cuisineaz.com/660x660/2018-09-26/i142888-pizza-vegetarienne-recette.jpeg",
+      "prix": "11,50"
+    },
+    {
+      "_id": 7,
+      "nom": "L'Italienne",
+      "ingredients": [
+        "Mozzarella di Bufala"
+      ],
+      "base": {
+        "label": "Tomate",
+        "describe": "Sauce Tomate",
+        "title": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
+      "avecViande": true,
+      "avecPoisson": false,
+      "afterCook": [
+        "Jambon de Parme",
+        "Parmigiano",
+        "Tomates cerises",
+        "Sauce basilic"
+      ],
+      "url": "https://eat.portodimarecascais.com/wp-content/uploads/2020/09/parma-bufala.jpg",
+      "prix": "13,00"
+    },
+    {
+      "_id": 8,
+      "nom": "La Piccante",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Spianata Calabrese",
+        "Oignons rouges",
+        "Olives noires"
+      ],
+      "base": {
+        "label": "Tomate",
+        "describe": "Sauce Tomate",
+        "title": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
+      "avecViande": true,
+      "avecPoisson": false,
+      "afterCook": null,
+      "url": "https://www.chilirezept.de/wp-content/uploads/2019/02/Pizza-Calabria.jpg",
+      "prix": "11,50"
+    },
+    {
+      "_id": 9,
+      "nom": "La Salsiccia de Bufflonne",
+      "ingredients": [
+        "Mozzarella di Bufala",
+        "Saucisse",
+        "Persillade",
+        "Olives noires"
+      ],
+      "base": {
+        "label": "Tomate",
+        "describe": "Sauce Tomate",
+        "title": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
+      "avecViande": true,
+      "avecPoisson": false,
+      "afterCook": null,
+      "url": "https://www.mydailydinner.nl/wp-content/uploads/2020/04/Pizza-Salsiccia-02-04-2020.jpg",
+      "prix": "13,00"
+    },
+    {
+      "_id": 10,
+      "nom": "La Napoletana",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Anchois",
+        "Câpres",
+        "Olives noires"
+      ],
+      "base": {
+        "label": "Tomate",
+        "describe": "Sauce Tomate",
+        "title": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
+      "avecViande": false,
+      "avecPoisson": true,
+      "afterCook": null,
+      "url": "https://i0.wp.com/www.lavespadeshalles.com/wp-content/uploads/2019/11/pizza-napolitaine_ok.jpg?fit=4898%2C3265&ssl=1",
+      "prix": "11,50"
+    },
+    {
+      "_id": 11,
+      "nom": "La Coppa",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Artichaut à la Romaine",
+        "Olives noires"
+      ],
+      "base": {
+        "label": "Tomate",
+        "describe": "Sauce Tomate",
+        "title": "Base Tomate",
+        "key": "baseRouge",
+        "state": "baseRouge",
+        "setState": "setBaseRouge"
+      },
+      "avecViande": true,
+      "avecPoisson": false,
+      "afterCook": [
+        "Coppa",
+        "Parmigiano"
+      ],
+      "url": "https://www.foodette.fr/files/products/pizza-coppa-mozzarella-bufala-roquette-tomate-rucola-italie.jpg",
+      "prix": "12,00"
+    },
+    {
+      "_id": 12,
+      "nom": "La 4 Formaggi",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Chèvre",
+        "Gorgonzola",
+        "Parmigiano"
+      ],
+      "base": {
+        "label": "Crème",
+        "describe": "Crème Fraîche",
+        "title": "Base Crème",
+        "key": "baseBlanche",
+        "state": "baseBlanche",
+        "setState": "setBaseBlanche"
+      },
+      "avecViande": false,
+      "avecPoisson": false,
+      "afterCook": null,
+      "url": "https://s3-eu-west-1.amazonaws.com/straus/media/products2/2981.jpg",
+      "prix": "11,50"
+    },
+    {
+      "_id": 13,
+      "nom": "La Biquette",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Chèvre"
+      ],
+      "base": {
+        "label": "Crème",
+        "describe": "Crème Fraîche",
+        "title": "Base Crème",
+        "key": "baseBlanche",
+        "state": "baseBlanche",
+        "setState": "setBaseBlanche"
+      },
+      "avecViande": false,
+      "avecPoisson": false,
+      "afterCook": [
+        "Miel (sur demande)"
+      ],
+      "url": "https://leloft-restaurant.com/wp-content/uploads/2020/05/PIZZA-CHEVRE-MIEL.jpg",
+      "prix": "10,50"
+    },
+    {
+      "_id": 14,
+      "nom": "La Salmone",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Émincés de Champignons"
+      ],
+      "base": {
+        "label": "Crème",
+        "describe": "Crème Fraîche",
+        "title": "Base Crème",
+        "key": "baseBlanche",
+        "state": "baseBlanche",
+        "setState": "setBaseBlanche"
+      },
+      "avecViande": false,
+      "avecPoisson": true,
+      "afterCook": [
+        "Saumon",
+        "Crème balsamique"
+      ],
+      "url": "https://i0.wp.com/www.lavespadeshalles.com/wp-content/uploads/2019/11/pizza-salmone2_ok.jpg?fit=4898%2C3265&ssl=1",
+      "prix": "11,50"
+    },
+    {
+      "_id": 15,
+      "nom": "La Charcutière",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Gorgonzola"
+      ],
+      "base": {
+        "label": "Crème",
+        "describe": "Crème Fraîche",
+        "title": "Base Crème",
+        "key": "baseBlanche",
+        "state": "baseBlanche",
+        "setState": "setBaseBlanche"
+      },
+      "avecViande": true,
+      "avecPoisson": false,
+      "afterCook": [
+        "Jambon de Parme",
+        "Spianata Calabrese",
+        "Parmigiano",
+        "Sauce basilic"
+      ],
+      "url": "https://wdwnt.com/wp-content/uploads/2021/04/craftsman-bar-grill-charcuterie-pizza-4-1711939-1200x900.jpg",
+      "prix": "13,00"
+    },
+    {
+      "_id": 16,
+      "nom": "La Foresta",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Oignons rouges",
+        "Émincés de Champignons",
+        "Lardons",
+        "Persillade"
+      ],
+      "base": {
+        "label": "Crème",
+        "describe": "Crème Fraîche",
+        "title": "Base Crème",
+        "key": "baseBlanche",
+        "state": "baseBlanche",
+        "setState": "setBaseBlanche"
+      },
+      "avecViande": true,
+      "avecPoisson": false,
+      "afterCook": null,
+      "url": "https://recettes-gourmandes-de-joce.fr/wp-content/uploads/2019/10/PA190532.jpg",
+      "prix": "11,50"
+    },
+    {
+      "_id": 17,
+      "nom": "La Tonno",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Oignons rouges",
+        "Thon",
+        "Olives noires"
+      ],
+      "base": {
+        "label": "Crème",
+        "describe": "Crème Fraîche",
+        "title": "Base Crème",
+        "key": "baseBlanche",
+        "state": "baseBlanche",
+        "setState": "setBaseBlanche"
+      },
+      "avecViande": false,
+      "avecPoisson": true,
+      "afterCook": null,
+      "url": "https://s3-eu-west-1.amazonaws.com/straus/media/products2/10245.jpg",
+      "prix": "11,50"
+    },
+    {
+      "_id": 18,
+      "nom": "La Tamburrini",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Oignons rouges",
+        "Lardons",
+        "Gorgonzola",
+        "Sauce Basilic"
+      ],
+      "base": {
+        "label": "Crème",
+        "describe": "Crème Fraîche",
+        "title": "Base Crème",
+        "key": "baseBlanche",
+        "state": "baseBlanche",
+        "setState": "setBaseBlanche"
+      },
+      "avecViande": false,
+      "avecPoisson": true,
+      "afterCook": null,
+      "url": "https://s3-eu-west-1.amazonaws.com/straus/media/products2/10245.jpg",
+      "prix": "12,00"
+    },
+    {
+      "_id": 19,
+      "nom": "La Speciale",
+      "ingredients": [
+        "Mozzarella Fior Di Latte",
+        "Courgettes"
+      ],
+      "base": {
+        "label": "Spéciale",
+        "describe": "",
+        "title": "Spéciale",
+        "key": "sansBase",
+        "state": "sansBase",
+        "setState": "setSansBase"
+      },
+      "avecViande": true,
+      "avecPoisson": false,
+      "afterCook": [
+        "Mozzarella di Bufala",
+        "Tomates cerises",
+        "Jambon de Parme",
+        "Sauce basilic"
+      ],
+      "url": "https://therecipecritic.com/wp-content/uploads/2020/07/zucchini-pizza-4-667x1000.jpg",
+      "prix": "13,50"
+    }
+  ],
+  "boissons": [
+    {
+      "_id": 1,
+      "nom": "Ice Tea",
+      "prix": "2,00",
+      "boissonChaudes": false,
+      "boissonAlcool": false,
+      "boissonSoft": true
+    },
+    {
+      "_id": 2,
+      "nom": "Coca Cola",
+      "prix": "2,00",
+      "boissonChaudes": false,
+      "boissonAlcool": false,
+      "boissonSoft": true
+    },
+    {
+      "_id": 3,
+      "nom": "San Pellegrino 1/2",
+      "prix": "2,00",
+      "boissonChaudes": false,
+      "boissonAlcool": false,
+      "boissonSoft": true
+    },
+    {
+      "_id": 4,
+      "nom": "San Pellegrino 1L",
+      "prix": "2,50",
+      "boissonChaudes": false,
+      "boissonAlcool": false,
+      "boissonSoft": true
+    },
+    {
+      "_id": 5,
+      "nom": "Evian 1/2",
+      "prix": "2,00",
+      "boissonChaudes": false,
+      "boissonAlcool": false,
+      "boissonSoft": true
+    },
+    {
+      "_id": 6,
+      "nom": "Evian 1L",
+      "prix": "2,50",
+      "boissonChaudes": false,
+      "boissonAlcool": false,
+      "boissonSoft": true
+    },
+    {
+      "_id": 7,
+      "nom": "Bières Artisanales",
+      "prix": "3,50",
+      "boissonChaudes": false,
+      "boissonAlcool": true,
+      "boissonSoft": false
+    },
+    {
+      "_id": 9,
+      "nom": "Vin Rouge Local",
+      "prix": "9,00",
+      "boissonChaudes": false,
+      "boissonAlcool": true,
+      "boissonSoft": false
+    },
+    {
+      "_id": 10,
+      "nom": "Vin Rosé Local",
+      "prix": "7,00",
+      "boissonChaudes": false,
+      "boissonAlcool": true,
+      "boissonSoft": false
+    }
+  ],
+  "desserts": [
+    {
+      "_id": 1,
+      "nom": "Tiramisu",
+      "prix": "4,50",
+      "url": "https://www.chezpino.be/wp-content/uploads/2020/10/02b90d9d36145917dea77ecdb4af3613.jpg"
+    },
+    {
+      "_id": 2,
+      "nom": "Panna Cotta",
+      "prix": "3,50",
+      "url": "https://cdn-elle.ladmedia.fr/var/plain_site/storage/images/elle-a-table/recettes-de-cuisine/panna-cotta-thermomix-3644747/86259461-1-fre-FR/Panna-cotta-Thermomix.jpg"
+    }
+  ],
+  "supplements": [
+    {
+      "_id": 1,
+      "nom": "Oeuf/Légumes",
+      "prix": "0,50"
+    },
+    {
+      "_id": 3,
+      "nom": "Légume",
+      "prix": "0,50"
+    },
+    {
+      "_id": 4,
+      "nom": "Fromages, Charcuteries, Saucisse, Artichaut",
+      "prix": "1,00"
+    },
+    {
+      "_id": 5,
+      "nom": "Thon, Saumon",
+      "prix": "1,50"
+    },
+    {
+      "_id": 6,
+      "nom": "Bufala",
+      "prix": "2,50"
+    }
+  ]
+}

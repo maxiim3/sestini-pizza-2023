@@ -1,0 +1,119 @@
+//@use "normalize.css";
+@use "settings" as var;
+@use "components" as comp;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+	font-size: 62.5%;
+	overflow-x: hidden;
+
+	li {
+		list-style: none;
+	}
+
+	scroll-behavior: smooth;
+}
+
+.neoMorphism {
+	box-shadow: -2px -2px 3px 0px rgba(158, 158, 158, 0.5), 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+
+	&:focus,
+	&:active {
+		box-shadow: inset -2px -2px 3px 0px rgba(158, 158, 158, 0.5),
+			inset 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+	}
+}
+
+.borderTop {
+	box-shadow: -4px 0px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+//region NAVIGATION-MOBILE
+
+.nav-btn-full {
+	@include var.btn-nav--full;
+}
+
+.nav-btn-empty {
+	@include var.btn-nav--empty;
+}
+
+.navigation {
+	position: fixed;
+	z-index: 50;
+	width: var.$fullWidth;
+	height: var.$fullHeight;
+	margin: 0;
+	padding: 0;
+
+	.navigationWrapper {
+		@include var.dark-home-page;
+
+		.social-grid {
+			@include var.social-grid-top(4.2rem);
+		}
+	}
+}
+
+//endregion
+
+.scroll-icon {
+	animation-name: scrollY;
+	animation-duration: 750ms;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes scrollY {
+	0% {
+		transform: translateY(-1rem);
+	}
+	100% {
+		transform: translateY(1rem);
+	}
+}
+
+#modal {
+	overflow: hidden;
+	width: min(100%, 850px);
+	height: min(100%, 1050px);
+	border-radius: 20px;
+	background: rgba(32, 43, 49, 0.9);
+
+	&::backdrop {
+		background: rgba(0, 0, 0, 0.75);
+	}
+
+	.modalLink,
+	button {
+		outline-color: var.$color-gold;
+		outline-offset: 5px;
+	}
+
+	&::before {
+		font-size: 10px;
+		font-weight: normal;
+		position: absolute;
+		top: 30px;
+		right: 17px;
+		display: block;
+		width: 100px;
+		content: attr(data-timing);
+		color: var.$color-beige-light;
+		@media screen and (min-width: 768px) {
+			top: 60px;
+		}
+	}
+}
+
+.modal__img {
+	width: min(100%, 850px);
+	max-height: 600px;
+	border-radius: 15px;
+	margin-inline: auto;
+	object-fit: contain;
+	object-position: center;
+}

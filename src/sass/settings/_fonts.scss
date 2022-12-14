@@ -1,0 +1,27 @@
+/* Montserrat          */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800&display=swap');
+/* Cinzel & Czl. Deco. */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;800;900&display=swap');
+/* Roboto              */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+$police-main: 'Montserrat', sans-serif;
+$police-descriptive: 'Roboto', sans-serif;
+$police-seconde: 'Cinzel', serif;
+$police-seconde--alt: 'Cinzel Decorative', cursive;
+
+$fs-home-sm: 1.2rem;
+$fs-home-reg: 1.6rem;
+$fs-home: 2.5rem;
+$fs-home-400: 1.6rem;
+
+
+$fs-nav-aside: 0.9rem;
+$fs-nav-reg: 1.2rem;
+$fs-nav-h2: 1.5rem;
+$fs-nav-h1: 1.8rem;
+
+$fs-carte-reg: 1.2rem;
+$fs-carte-desc: 1.3rem;
+$fs-carte-icons: 1.3rem;
+$fs-carte-price: 1.5rem;
+$fs-carte-h1: 1.8rem;
